@@ -63,6 +63,7 @@ Citizen.CreateThread(function()
 			if WarMenu.Button("~p~Selected: " .. "~y~[" .. GetPlayerServerId(selectedPlayer) .. "] ~s~" .. GetPlayerName(selectedPlayer)) then
 			elseif WarMenu.Button("ID: ~y~[" .. GetPlayerServerId(selectedPlayer) .. "] ~s~") then
 			elseif WarMenu.Button("Name: ~y~[" .. GetPlayerName(selectedPlayer) .. "] ~s~") then
+            --elseif WarMenu.Button("Steam: ~y~[" .. xPlayer.getIdentifier(selectedPlayer) .. "] ~s~") then
 			end
 
 			WarMenu.Display()
@@ -75,6 +76,10 @@ Citizen.CreateThread(function()
 
 		Citizen.Wait(0)
 	end
+end)
+
+AddEventHandler('playerSpawned', function(spawn)
+    return count
 end)
 
 

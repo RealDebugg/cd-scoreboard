@@ -6,3 +6,4 @@ client_script('config.lua')
 client_script('cl_sc.lua')
 
 server_script 'versioncheck.lua'
+server_script('sv_steam.lua')
