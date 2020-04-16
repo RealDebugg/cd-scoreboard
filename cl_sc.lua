@@ -63,7 +63,7 @@ Citizen.CreateThread(function()
 			if WarMenu.Button("~p~Selected: " .. "~y~[" .. GetPlayerServerId(selectedPlayer) .. "] ~s~" .. GetPlayerName(selectedPlayer)) then
 			elseif WarMenu.Button("ID: ~y~[" .. GetPlayerServerId(selectedPlayer) .. "] ~s~") then
 			elseif WarMenu.Button("Name: ~y~[" .. GetPlayerName(selectedPlayer) .. "] ~s~") then
-            --elseif WarMenu.Button("Steam: ~y~[" .. xPlayer.getIdentifier(selectedPlayer) .. "] ~s~") then
+            		elseif WarMenu.Button("Steam: ~y~[" .. ESX.PlayerData.identifier .. "] ~s~") then
 			end
 
 			WarMenu.Display()
